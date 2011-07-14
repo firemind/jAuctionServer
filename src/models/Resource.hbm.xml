@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+	<!-- Generated Jul 14, 2011 10:07:50 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+
+	<class name="models.Resource" table="RESOURCE">
+	        <id name="id" type="long" access="field">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+
+		<property name="name" type="java.lang.String" access="field">
+			<column name="NAME" />
+		</property>
+
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ch.zeira.jAuctionServer/server/|test/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-lang.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-collections3.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/ezmorph.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/json-lib.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/mysql.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/mysql-connector-java.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/dom4j.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/log4j-1.2.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/jta.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/jboss-j2ee.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/javassist.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/antlr.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+	<!-- Generated Jul 14, 2011 10:07:50 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+
+	<class name="models.User" table="users">
+	        <id name="id" type="long" access="field">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+		<property name="money" type="long" access="field">
+			<column name="MONEY" />
+		</property>
+
+		<property name="username" type="java.lang.String" access="field">
+			<column name="USERNAME" />
+		</property>
+
+		<property name="password" type="java.lang.String" access="field">
+			<column name="PASSWORD" />
+		</property>
+		
+		
+		<map name="Stock" table="stock" lazy="true" >
+			<key>
+				<column name="user_id" />
+			</key>
+			<map-key column="resource_id" type="java.lang.Long" />
+
+			<element column="amount" type="java.lang.Long" />
+		</map>
+	</class>
+
+</hibernate-mapping>
