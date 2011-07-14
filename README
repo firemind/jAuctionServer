@@ -10,6 +10,11 @@ Required libs for jAuctionServer:
 * commons-beanutils
 * libjson
 * ezmorph
+* libjavassist-java
+* libjboss-j2ee-java
+* jta
+* maven2
+
 
 Add them to the buildpath in eclipse.
 
