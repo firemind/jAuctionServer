@@ -6,7 +6,7 @@
 	<!-- Generated Jul 14, 2011 10:07:50 PM by Hibernate Tools 3.3.0.GA -->
 <hibernate-mapping>
 
-	<class name="models.Resource" table="RESOURCE">
+	<class name="models.Resource" table="resources">
 	        <id name="id" type="long" access="field">
             <column name="ID" />
             <generator class="increment" />

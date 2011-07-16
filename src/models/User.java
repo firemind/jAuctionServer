@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import server.Connection;
+import server.JAuctionLogger;
 
 import net.sf.json.JSONObject;
 
@@ -69,7 +70,7 @@ public String getUsername(){
 	  if(this.stock.containsKey(resource_id)){
 		  return this.stock.get(resource_id);
 	  }else{
-		  System.out.println("don't have stock "+resource_id);
+		  JAuctionLogger.log("don't have stock "+resource_id);
 		  return 0;
 	  }
   }

@@ -9,7 +9,7 @@ import models.Model;
 
 public class Store <T extends Model> extends Observable{
 
-    private Model model;
+    protected Model model;
     protected HashMap<Long, T> records = new HashMap<Long, T>();
     
     public Store(Model class1){

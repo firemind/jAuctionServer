@@ -9,9 +9,9 @@ import models.User;
 public class ResourceStore extends Store<Resource>{
     public ResourceStore() {
 		super(new Resource());
-		addResource("Gold");
+		/*addResource("Gold");
 		addResource("Silver");
-		addResource("Copper");
+		addResource("Copper");*/
 		loadFromDB();
 	}
     

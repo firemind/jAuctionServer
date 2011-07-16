@@ -33,11 +33,23 @@ public class UserStore extends Store{
      * @return User Object
      */
     public User addUser(String username, String password){
-    	User user = new User( username, password);
-    	user.save();
-    	return (User) add(user);
+    	if(this.getUserByUsername(username) == null){
+        	User user = new User( username, password);
+        	user.save();
+        	return (User) add(user);
+    	}else{
+    	  return null;	
+    	}
     }
 
+    public User getUserByUsername(String username){
+    	List<Model> users = this.model.getByAttribute("username", username);
+    	if(users.isEmpty()){
+    		return null;
+    	}else{
+    		return (User) users.get(0);
+    	}
+    }
 
     /**
      * Authenticates User by username and password            
