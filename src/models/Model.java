@@ -66,7 +66,6 @@ public abstract class Model implements ModelRules, Serializable{
 	
 	protected void createFactory(){
 		  if (sessionFactory == null)
-			JAuctionLogger.log(this.getTablename());
 			sessionFactory = new Configuration()
 	        .configure() // configures settings from hibernate.cfg.xml
 	        .addResource("models/"+this.getTablename()+".hbm.xml")
